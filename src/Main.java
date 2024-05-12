@@ -1,7 +1,3 @@
-import Base.Employee;
-
-import java.sql.SQLOutput;
-
 public class Main {
     public static void main(String[] args) {
         Integer id1 = new Integer(1);
@@ -10,9 +6,9 @@ public class Main {
         String name1 = new String("Иванов Иван Иванович");
         String name2 = new String("Петров Петр Петрович");
         String name3 = new String("Сергеев Сергей Сергеевич");
-        String department1 = new String("Отдел 1");
-        String department2 = new String("Отдел 2");
-        String department3 = new String("Отдел 3");
+        department1.setDepartment(1);
+        department2.setDepartment(2);
+        department3.setDepartment(3);
         double salary1 = new Double(35800);
         double salary2 = new Double(58200);
         double salary3 = new Double(71400);

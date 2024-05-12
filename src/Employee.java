@@ -4,25 +4,27 @@ import java.util.Objects;
 
 public class Employee {
     private String name;
-    private String department;
+    private int department;
     private double salary;
     public static int count = 1;
     private Integer id = 1;
+
     public Employee() {
         count++;
     }
-    public Employee(String name, String department, double salary, Integer id) {
+
+    public Employee(String name, int department, double salary) {
         this.name = name;
         this.department = department;
         this.salary = salary;
-        this.id = id;
+        this.id = count++;
     }
 
     public String getName() {
         return name;
     }
 
-    public String getDepartment() {
+    public int getDepartment() {
         return department;
     }
 
@@ -34,7 +36,7 @@ public class Employee {
         return id;
     }
 
-    public void setDepartment(String department) {
+    public void setDepartment(int department) {
         this.department = department;
     }
 
